@@ -2,8 +2,8 @@
 
 <p align="center">
   <img width="250" src="prints/print-001.jpeg"/>
-  <img width="250" src="prints/print-001.jpeg"/>
-  <img width="250" src="prints/print-001.jpeg"/>
+  <img width="250" src="prints/print-002.jpeg"/>
+  <img width="250" src="prints/print-003.jpeg"/>
 </p>
 
 ## How to use
@@ -26,6 +26,7 @@ $ flutter run
 
 ## Credits
  - [Movies app UI Kit by Allen lee](https://www.sketchappsources.com/free-source/3074-movies-app-ui-kit-sketch-freebie-resource.html)
+
 ## Contact
   - <a target="_blank" href="https://www.linkedin.com/in/fernando-moraes-48a26916a/">LinkedIn</a>
   - <a target="_blank" href="mailto:fernandomoraes.lopes@gmail.com">E-mail</a>
