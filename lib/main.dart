@@ -1,3 +1,4 @@
+import 'package:entertainmentapp/views/launcher.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Entertainment App',
-      home: Container(),
+      home: Launcher(),
     );
   }
 }
