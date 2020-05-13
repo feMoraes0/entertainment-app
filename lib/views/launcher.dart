@@ -1,16 +1,11 @@
+import 'dart:async';
+
+import 'package:entertainmentapp/views/walkthrough.dart';
 import 'package:flutter/material.dart';
 
 class Launcher extends StatelessWidget {
-  void goToNext(BuildContext context) {
-    new Future.delayed(
-      Duration(seconds: 2),
-//      () => Navigator.pushNamed(context, 'walkthrough'),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
-    this.goToNext(context);
     Size screen = MediaQuery.of(context).size;
     return Scaffold(
       body: Stack(
