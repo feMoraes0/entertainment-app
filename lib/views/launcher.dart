@@ -1,6 +1,3 @@
-import 'dart:async';
-
-import 'package:entertainmentapp/views/walkthrough.dart';
 import 'package:flutter/material.dart';
 
 class Launcher extends StatelessWidget {
