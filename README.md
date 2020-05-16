@@ -1,3 +1,6 @@
+<p align="center">
+  <img width="100" src="prints/logo.png"/>
+</p>
 <h1 align="center">Entertainment App</h1>
 
 <p align="center">
