@@ -26,3 +26,8 @@ const walkthroughPages = [
     ],
   },
 ];
+
+/// Movies
+const horizontalMoviePosters = [
+  'images/movies/horizontal/justice-league.png',
+];
