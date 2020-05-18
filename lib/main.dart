@@ -1,3 +1,4 @@
+import 'package:entertainmentapp/views/home.dart';
 import 'package:entertainmentapp/views/launcher.dart';
 import 'package:entertainmentapp/views/walkthrough.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'launcher': (context) => Launcher(),
         'walkthrough': (context) => Walkthrough(),
+        'home': (context) => Home(),
       },
       home: Walkthrough(),
     );
