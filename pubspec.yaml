@@ -45,6 +45,7 @@ flutter:
     - images/launcher/
     - images/walkthrough/
     - images/movies/horizontal/
+    - images/movies/vertical/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
