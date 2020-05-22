@@ -2,7 +2,7 @@ import 'package:entertainmentapp/components/background_image_walkthrough.dart';
 import 'package:entertainmentapp/components/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:entertainmentapp/design_constants.dart' as kDesign;
+import 'package:entertainmentapp/utilities/design_constants.dart' as kDesign;
 
 const kButtonTextStyle = TextStyle(
   color: Color(0xFFFFFFFF),

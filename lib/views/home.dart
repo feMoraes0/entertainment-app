@@ -1,10 +1,69 @@
 import 'package:entertainmentapp/components/poster_card.dart';
 import 'package:flutter/material.dart';
-import 'package:entertainmentapp/constants.dart' as Constants;
-import 'package:entertainmentapp/design_constants.dart' as kDesign;
+import 'package:entertainmentapp/utilities/constants.dart' as Constants;
+import 'package:entertainmentapp/utilities/design_constants.dart' as kDesign;
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Home extends StatelessWidget {
+  List<Widget> popularMovies({List movies}) {
+    List<Widget> popularMovies = [];
+
+    movies.forEach((movie) {
+      popularMovies.add(
+        Stack(
+          children: <Widget>[
+            PosterCard(
+              child: Image.asset(
+                movie['image'],
+                fit: BoxFit.cover,
+              ),
+            ),
+            Positioned(
+              bottom: 20.0,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Opacity(
+                      opacity: 0.8,
+                      child: Text(
+                        movie['year'],
+                        style: TextStyle(
+                          fontFamily: 'SF Pro Display',
+                          fontSize: 12.0,
+                          height: 14.0 / 12.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 120.0,
+                      child: Text(
+                        movie['name'].toUpperCase(),
+                        maxLines: 2,
+                        style: TextStyle(
+                          fontFamily: 'SF Pro Display',
+                          fontSize: 12.0,
+                          height: 14.0 / 12.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    });
+
+    return popularMovies;
+  }
+
   List<Widget> buildVerticalPosterList({List movies}) {
     List<Widget> posters = [];
     movies.forEach((movie) {
@@ -177,7 +236,20 @@ class Home extends StatelessWidget {
                   'Popular',
                   style: Constants.kLabelSection,
                 ),
-              )
+              ),
+              SizedBox(height: 20.0),
+              Container(
+                height: 450.0,
+                margin: const EdgeInsets.only(left: 10.0),
+                child: GridView.count(
+                  scrollDirection: Axis.horizontal,
+                  crossAxisCount: 2,
+                  childAspectRatio: 220 / 160,
+                  children: this.popularMovies(
+                    movies: kDesign.popularMovies,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

@@ -59,3 +59,46 @@ const verticalPosterMovies = [
     'img': 'images/movies/vertical/hotel-transylvania.png',
   },
 ];
+
+const popularMovies = [
+  {
+    'name': 'Arrival',
+    'image': 'images/movies/vertical/arrival.png',
+    'year': '2006',
+  },
+  {
+    'name': 'Expanse',
+    'image': 'images/movies/vertical/expanse.png',
+    'year': '2006',
+  },
+  {
+    'name': 'The Dark Knight',
+    'image': 'images/movies/vertical/the-dark-knight.png',
+    'year': '2006',
+  },
+  {
+    'name': 'The Man In The High Castle',
+    'image': 'images/movies/vertical/the-man-in-the-high-castle.png',
+    'year': '2006',
+  },
+  {
+    'name': 'Ghost Story',
+    'image': 'images/movies/vertical/ghost-story.png',
+    'year': '2006',
+  },
+  {
+    'name': 'Salvation',
+    'image': 'images/movies/vertical/salvation.png',
+    'year': '2006',
+  },
+  {
+    'name': 'Wonder Woman',
+    'image': 'images/movies/vertical/wonder-woman.png',
+    'year': '2006',
+  },
+  {
+    'name': 'Mother',
+    'image': 'images/movies/vertical/mother.png',
+    'year': '2006',
+  },
+];
